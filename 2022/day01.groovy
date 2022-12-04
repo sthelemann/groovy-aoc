@@ -57,6 +57,6 @@ println 'Test ok'
 //-----------------------------------------------
 // Puzzle
 
-input = Puzzle.getInput(1)
+input = Puzzle.getInput(2022, 1)
 
 Puzzle.printResults solve(input, 1), solve(input, 2)

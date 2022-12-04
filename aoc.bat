@@ -1,6 +1,9 @@
 @echo off
 
-set GROOVY_LIB_DIR=%GROOVY_HOME%/lib
-set CP=.;./util;%GROOVY_LIB_DIR%/*
+set year=%1%
+set day=%2%
 
-java -cp "%CP%" groovy.ui.GroovyMain day%1%.groovy
+set GROOVY_LIB_DIR=%GROOVY_HOME%/lib
+set CP=.;./util;%GROOVY_LIB_DIR%/*;%GROOVY_LIB_DIR%/extras-jaxb/*
+
+java -cp "%CP%" groovy.ui.GroovyMain %year%\day%day%.groovy

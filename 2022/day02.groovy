@@ -44,6 +44,6 @@ println 'Test ok'
 //-----------------------------------------------
 // Puzzle
 
-input = Puzzle.getInput(2)
+input = Puzzle.getInput(2022, 2)
 
 Puzzle.printResults rps.solve(input, 1), rps.solve(input, 2)

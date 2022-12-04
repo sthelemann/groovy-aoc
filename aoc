@@ -3,6 +3,6 @@
 set -o noglob
 
 set GROOVY_LIB_DIR=%GROOVY_HOME%/lib
-set CP=.;./util;%GROOVY_LIB_DIR%/*
+set CP=.:./util;%GROOVY_LIB_DIR%/*:%GROOVY_LIB_DIR%/extras-jaxb/*
 
-java -cp "$CP" groovy.ui.GroovyMain day$1.groovy
+java -cp "$CP" groovy.ui.GroovyMain $1/day$2.groovy
