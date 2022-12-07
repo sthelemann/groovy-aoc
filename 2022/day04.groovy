@@ -46,6 +46,4 @@ println 'Test ok'
 
 input = Puzzle.getInput(2022, 4)
 
-// TODO
-
 Puzzle.printResults solve(input, 1), solve(input, 2)
