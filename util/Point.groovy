@@ -7,6 +7,10 @@ class Point {
         this.y = y
     }
 
+    boolean equals(p) {
+        this.x == p.x && this.y == p.y
+    }
+
     String toString() {
         "($this.x, $this.y)".toString()
     }
