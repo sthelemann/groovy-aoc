@@ -1,3 +1,6 @@
+import groovy.transform.EqualsAndHashCode
+
+@EqualsAndHashCode
 class Point {
     int x
     int y
@@ -5,10 +8,6 @@ class Point {
     Point(x, y) {
         this.x = x
         this.y = y
-    }
-
-    boolean equals(p) {
-        this.x == p.x && this.y == p.y
     }
 
     String toString() {
